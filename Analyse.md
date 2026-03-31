@@ -54,29 +54,40 @@ chemin route - 506m de dénivelé -
 ## Masse totale
 Moi : 85kg
 Velo : 20kg 
-bonus : 5-6kg
-Total : 111 kg 
+bonus : 10kg
+Total : 115 kg 
 
 ## Batterie
 
-### Calcul Energie 
-calcul à 600 mètres de dénivelé
-111kg*9.81*600m=653000 J ~ 181Wh 
+**calcul pour le trajet** :  
+- 16.3km estimation 1h25min
+- chemin route/VTC
+- 600m_dénivelé+
 
-Résistance au roulement et rendement moteur ~85%
+**Energie**
+115kg*9.81*600m~680000 J ~ 680000/3.6e3 ~188Wh 
+1J=0.0002777Wh
 
-Consommation réelle 220-260Wh pour le retour  
+Rendement moteur et transmission ~70-80%
+pertes : vent, route, terrain 
+
+Consommation réelle 250-300Wh pour le dénivelé   
+
+Sur chemin VTC (rendement moyen à mauvais) : 10 à 15 Wh/km ~ 160–240 Wh
 
 Wh = V × Ah 
+Montée	250–300 Wh
+Roulement	160–240 Wh
+Total	410–540 Wh
+
+Avec marge (froid, vieillissement batterie, vent, fatigue) :
+Recommandé : 700 à 900 Wh de batterie
+
 ### Cible Batterie 48V - 10A ~ 480W  
 ### Cible Batterie 48V - 14A ~ 672W  
+### Cible Batterie 48V - 20A ~ 960W 
 
-# Recherche VAE premium existant 
-
-
-![texte alternatif](./capture/comparatif_VAE_commerce.png)
-
-# Recherche assemblage VAE DIY
+## Moteur 
 
 ###  Bafang BBS02 250W  
 - Capteur de couple (pas seulement de cadence) pour un feeling naturel
@@ -86,33 +97,11 @@ https://www.lift-mtb.com/produit/moteur-bafang-bbs02-250w/
 
 - Fournisseurs français sérieux : Cycloboost (Bordeaux), Virvolt, À bicyclette Paulette
 
-## Batterie 
-### Architecture
+### Bafang BBS02 (750W)
+### Bafang BBSHD (1000W)
 
-Les meilleures cellules Samsung 35E ou Panasonic NCR18650GA.
-- pack de cellules 18650 Samsung (ex:13S4P = 52 cellules)
-- BMS (circuit électronique de gestion)
+# Recherche VAE premium existant 
 
-Une batterie 48V Li-ion est composée de 13 cellules en série. Pour obtenir une batterie de 48V et 20Ah, il faut 13 × 2 soit 26 cellules, plus un BMS. Le montage en série est noté "S" et en parallèle "P" — une batterie 13S4P contient donc 52 cellules 18650
+https://www.bosch-ebike.com/fr/produits/performance-line-cx-bdu374y 
+![texte alternatif](./capture/comparatif_VAE_commerce.png)
 
-Achat de batterie 
-https://www.nkon.nl/fr/samsung-inr18650-35e.html
-
-
-Taille de la batterie : 18650
-Batterie chimique : Li-ion
-Tension nominale : 3.6V
-Min. capacité : 3350 mAh
-Capacité typ. : 3400 mAh
-Poids : 49g
-Version batterie : Haut plat
-Courant de décharge : 8A
-Protection des circuits : Non protégé
-Hauteur : 65 mm
-Diamètre : 18.3 mm
-
-
-3.6V * 3.5Ah ~ 12.6Wh par cellule
-Avec 52 cellules : 
-Energie : 12.6Wh*52 ~ 655Wh
-Masse cellule : 49g*52 = 2.55kg 
